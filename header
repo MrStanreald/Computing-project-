@@ -1,0 +1,25 @@
+<!-- Loads icon library -->
+<!-- <i class="fa fa-sign-out" aria-hidden="true"></i> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+
+<div id="nav-container">
+    <div id="nav-wrapper">
+        <a href="index.php" class="nav-title">Launch Vehicle Database</a>
+        <div id="nav-buttons-container">
+            <?php
+        
+    if ($_SESSION['adminLogin'] == "True") {
+        echo '<form action="logout.php" method="POST">
+            <input class="nav-button active" type="submit" value="Sign Out">
+            </form>';
+            
+        } elseif ($_SESSION['adminLogin'] == "False") {
+        echo '<a href="index.php" class="nav-button active"><i class="fa fa-fw fa-user right-padded" aria-hidden="true"></i>Sign In</a>
+            <a href="about.php" class="nav-button"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></a>';
+            }    
+                
+        ?>
+        </div>
+    </div>
+</div>

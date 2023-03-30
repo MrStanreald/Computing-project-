@@ -1,0 +1,104 @@
+*{
+	margin:0;
+}
+
+body{
+	background-color: rgb(255, 255, 255);
+	background-repeat: no-repeat;
+	background-size: contain;
+	color:#ece7e5;
+	font-size:16px;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+h1{
+	text-align:centre;
+	color:rgb(233, 188, 67);
+	font-family: 'speedee';
+}
+p{
+	color:black
+}
+
+#M{
+	width:80px;
+	height:80px
+}
+
+table,tr,th,td{
+	border:1px solid rgb(0, 0, 0);
+	border-collapse: collapse;
+	padding:3px;
+}
+tr:nth-child(odd) {background-color: #f1ad74; 	color:black;}
+tr:nth-child(even) {background-color: #5c3918; color: #ffffff;}
+tr,td:hover {background-color: rgb(231, 177, 60); border:3px solid rgb(35, 131, 26);}
+
+/* Navigation Section*/
+.navB{
+	all:unset;
+	float:left;
+}
+
+nav{
+	border-bottom:2px solid;
+	border-color: black;
+}
+
+.signOutSection{
+	float:right;
+}
+
+.signout{
+	all:unset;
+	display:flex;
+	color:black;
+	background-color: yellow;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	vertical-align: top;
+	border-radius:10px;
+	float:right;
+}
+	  
+#top{
+	align-items:center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	border: black;
+	border-width: 20px;
+  }
+  
+  a, :visited{
+	color:orange;
+  }
+
+  li {
+	float: left;
+  }
+  
+  li a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+
+	/*end of nav*/
+  
+  /* Change the link color to #111 (black) on hover */
+	li a:hover {
+	background-color: black;
+	color: white;
+  }
+  .signout:hover {
+	background-color: black;
+	color: white;
+  }
